@@ -1,0 +1,88 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: gray;
+        color: #fcfcfc;
+        font-family: sans-serif;
+    }
+    
+    .nav {
+        padding: 5px;
+        background-color: #333;
+    }
+    
+    .nav-brand {
+        display: inline-block;
+        float: left;
+        font-size: 20px;
+    }
+    
+    .nav-items {
+        display: inline-block;
+        float: right;
+        list-style: none;
+    }
+    
+    .nav-item {
+        float: left;
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    .nav-item:hover {
+        color: orange;
+    }
+    
+    
+    .nav::after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+    #content {
+                position: relative;
+            }
+            #content img {
+                position: absolute;
+                top: 200px;
+                right: 200px;
+                border-radius: 10%;
+            }
+    </style>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Nav Bar</title>
+    </head>
+    
+    <body>
+        <ul class="nav">
+            <div class="nav-brand">
+                CvSU
+            </div>
+            <div class="nav-items">
+                <li class="nav-item"><ins>Home</ins></li>
+                <li class="nav-item">About</li>
+                <li class="nav-item">Blog</li>
+                <li class="nav-item">News</li>
+                <li class="nav-item">Gallery</li>
+                <div id="content">
+                    <img src="aaron.jpg" class="ribbon" alt="" width="200" />
+                   
+                </div>
+            </div>
+        </ul>
+    <p1> <h1><center><br>CvSU Trece Martires Campus <br> 17th Founding Anniversary</center></h1></p1>
+        
+       
+    </body>
+    
+    </html>

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./pic/bg2.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+    padding-top: 2%;
+    box-sizing: border-box;
+    animation: transitionIn 4s;
+    color: #fcfcfc;
+    font-family: sans-serif;
+}
+
+.nav {
+    padding: 5px;
+    background-color: #3C6255;
+    width: 100%;
+    
+}
+
+.ogol{
+    margin-top: -585px;
+    margin-left: 0px;
+    margin-right: 0%;
+}
+
+.logo{
+    width: 80px;
+}
+
+.nav-items {
+    display: inline-block;
+    float: right;
+    list-style: none;
+}
+
+.nav-item {
+    float: left;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    color: #ffff;
+}
+
+.nav-item:hover {
+    color: lightsalmon;
+}
+
+.nav::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.fa-house-chimney{
+    width: 30px;
+}
+
+.fa-pen-to-square{
+    width: 30px;
+}
+
+.fa-newspaper{
+    width: 30px;
+}
+
+.fa-arrow-left{
+    margin-left: 0%;
+    width: 0px;
+}
+.pictures {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.contacts{
+    cursor: pointer;
+    transition: transform 0.5s ;
+}
+.gallery{
+    cursor: pointer;
+    transition: transform 0.5s ;
+}
+.programs{
+    cursor: pointer;
+    transition: transform 0.5s ;
+}
+.about{
+    cursor: pointer;
+    transition: transform 0.5s ;
+}
+
+.imgnames {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 130px;
+    box-sizing: border-box;
+}
+#content {
+            position: relative;
+        }
+footer{
+    text-align: end;
+    background-attachment: fixed;
+}
+
+body {
+    animation: transitionIn 0.50s ease-in;
+}
+
+.about:hover{
+    transform: translateY(-10px);
+}
+.gallery:hover{
+    transform: translateY(-10px);
+}
+.programs:hover{
+    transform: translateY(-10px);
+}
+.contacts:hover{
+    transform: translateY(-10px);
+}
+
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX('-15deg');
+    }
+    to {
+        opacity: 1;
+        transform: rotateX('0');
+    }
+}
